@@ -10,7 +10,8 @@
   box-sizing: border-box; }
 
 :root {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  scroll-behavior: smooth; }
   :root body {
     margin: 0;
     font-family: "Raleway";
