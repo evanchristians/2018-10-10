@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Raleway:300";
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400";
 @keyframes bounce {
   0% {
     transform: translateY(0px); }
@@ -10,28 +10,41 @@
   box-sizing: border-box; }
 
 :root {
-  background-color: #F5F5F5; }
+  background-color: #FFFFFF; }
   :root body {
+    margin: 0;
     font-family: "Raleway";
     font-size: 1rem;
     color: #040404;
     font-weight: 300; }
     :root body .main-header {
-      margin-top: 4em;
+      position: relative;
+      height: 30em;
       text-align: center;
-      transition: color 300ms ease-in-out; }
-      :root body .main-header h1 {
-        text-shadow: 2px 2px #CADBC0, 2px 3px #CADBC0, 3px 3px #CADBC0, 3px 4px #CADBC0, 4px 4px #CADBC0, 4px 5px #CADBC0;
-        font-weight: 300;
-        margin: 0;
-        font-size: 4em; }
-      :root body .main-header h2 {
-        font-weight: 300;
-        margin: 0;
-        font-size: 2em; }
-      :root body .main-header img {
-        margin-top: 1em;
-        width: 3em;
-        animation: bounce 750ms ease-in-out infinite; }
+      transition: color 300ms ease-in-out;
+      background-image: url("../img/header-background.jpg");
+      background-color: #FFFFFF04;
+      background-blend-mode: lighten;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
+      :root body .main-header div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        :root body .main-header div h1 {
+          font-weight: 400;
+          margin: 0;
+          font-size: 4em; }
+        :root body .main-header div .main-title {
+          display: block;
+          font-weight: 300;
+          font-size: 1.3em;
+          margin: 1em auto; }
+        :root body .main-header div img {
+          margin-top: 3em;
+          width: 3em;
+          animation: bounce 750ms ease-in-out infinite; }
 
 /*# sourceMappingURL=main.css.map */

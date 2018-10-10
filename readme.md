@@ -29,11 +29,12 @@ Technologies and Tools Used:
 
 ### Changelog
 
-2018-10-10 - Initial Commit
-        - Folder Structure Created
-        - SCSS Partials Created
-        - Initialised Readme
-        - Styled Header
+**2018-10-10**
+- Folder Structure Created
+- SCSS Partials Created
+- Initialised Readme
+- Styled Header
+- Finalized Header Styling
 
 
 ## Contributors

@@ -1,16 +1,17 @@
 //Color Variables
 // ==============
 
-$white: #F5F5F5;
+$white: #FFFFFF;
 $black: #040404;
 $gold: #F6BD60;
 $grey: #CADBC0;
 
 //Font Variables
 // ==============
-@import 'https://fonts.googleapis.com/css?family=Raleway:300';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400';
 $wgtBase: 300;
+$wgtBold: 400;
 $font: 'Raleway';
 $fsBase: 1rem;
 $fsOne: 4em;
-$fsTwo: 2em;
+$fsTwo: 1.3em;
