@@ -1,29 +1,37 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:300";
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0px); } }
 * {
   box-sizing: border-box; }
 
 :root {
   background-color: #F5F5F5; }
   :root body {
-    text-align: center;
     font-family: "Raleway";
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: #040404;
     font-weight: 300; }
-    :root body .headerblock {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: color 300ms ease-in-out;
-      text-shadow: 2px 2px #CADBC0, 2px 3px #CADBC0, 3px 3px #CADBC0, 3px 4px #CADBC0, 4px 4px #CADBC0, 4px 5px #CADBC0, 5px 5px #CADBC0, 5px 6px #CADBC0; }
-      :root body .headerblock h1 {
-        font-weight: 300;
-        margin: 0;
-        font-size: 5em; }
-      :root body .headerblock h2 {
+    :root body .main-header {
+      margin-top: 4em;
+      text-align: center;
+      transition: color 300ms ease-in-out; }
+      :root body .main-header h1 {
+        text-shadow: 2px 2px #CADBC0, 2px 3px #CADBC0, 3px 3px #CADBC0, 3px 4px #CADBC0, 4px 4px #CADBC0, 4px 5px #CADBC0;
         font-weight: 300;
         margin: 0;
         font-size: 4em; }
+      :root body .main-header h2 {
+        font-weight: 300;
+        margin: 0;
+        font-size: 2em; }
+      :root body .main-header img {
+        margin-top: 1em;
+        width: 3em;
+        animation: bounce 750ms ease-in-out infinite; }
 
 /*# sourceMappingURL=main.css.map */

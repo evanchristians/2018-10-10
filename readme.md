@@ -2,6 +2,10 @@
 
 How to setup and use SCSS partials in your project
 
+## Live Link
+
+https://evanryk.github.io/2018-10-10/
+
 ## Prevalent Technologies Used
 
 *SCSS*
@@ -29,6 +33,7 @@ Technologies and Tools Used:
         - Folder Structure Created
         - SCSS Partials Created
         - Initialised Readme
+        - Styled Header
 
 
 ## Contributors
