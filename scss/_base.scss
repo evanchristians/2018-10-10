@@ -1,3 +1,5 @@
+
+// ============
 // Base Styles
 // ============
 
@@ -13,10 +15,11 @@
         font-size: $fsBase;
         color: $black;
         font-weight: $wgtBase;
+        line-height: 2em;
 
         .main-header {
             position: relative;
-            height: 30em;
+            height: 20em;
             text-align: center;
             transition: color 300ms ease-in-out;
             background-image: url('../img/header-background.jpg');
@@ -46,16 +49,42 @@
                 .main-title {
                     display: block;
                     font-weight: $wgtBase;
-                    font-size: $fsTwo;
+                    font-size: $fsThree;
                     margin: 1em auto;
 
                 }
                 img {
-                    margin-top: 3em;
+                    margin-top: 4em;
                     width: 3em;
                     animation: bounce 750ms ease-in-out infinite;
                 }
             }
+        }
+        .primary-content {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            p {
+                text-align: justify;
+            }
+            .intro {
+                width: 70%;
+                margin: 4.5em auto;
+                margin-bottom: 2em;
+                font-size: 1.4em;
+                text-align: center;
+                color: $drkgreen;
+            }
+            .wildlife {
+                margin: 6em auto;
+                margin-bottom: 3em;
+                font-size: 1.3em;
+            }
+        }
+
+        .secondary-content {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }

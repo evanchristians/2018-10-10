@@ -1,17 +1,29 @@
-//Color Variables
-// ==============
+
+// ============
+// Variables
+// ============
+
+// ---------------
+// Color Variables
+// ---------------
 
 $white: #FFFFFF;
 $black: #040404;
 $gold: #F6BD60;
-$grey: #CADBC0;
+$drkgreen: #749C75;
+$drkgrey: #464646;
+$lgtgrey: #CADBC0;
 
-//Font Variables
-// ==============
-@import 'https://fonts.googleapis.com/css?family=Raleway:300,400';
+// ---------------
+// Font Variables
+// ---------------
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,600';
 $wgtBase: 300;
 $wgtBold: 400;
+$wgtBlack: 600;
 $font: 'Raleway';
-$fsBase: 1rem;
-$fsOne: 4em;
-$fsTwo: 1.3em;
+$fsBase: 1.1rem;
+$fsOne: 3.1em;
+$fsTwo: 2.2em;
+$fsThree: 1.3em;

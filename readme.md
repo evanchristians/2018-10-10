@@ -35,6 +35,8 @@ Technologies and Tools Used:
 - Initialised Readme
 - Styled Header
 - Finalized Header Styling
+- Added Component Partial
+- Added Styles for Content
 
 
 ## Contributors

@@ -1,0 +1,59 @@
+// ============
+// Components
+// ============
+
+
+// ----------
+// Typography
+// ----------
+
+h2 {
+    font-weight: $wgtBold;
+    font-size: $fsTwo;
+    margin: 1.3em auto;
+}
+
+// ----------
+// Links
+// ----------
+
+a {
+    text-decoration: none;
+    transition: color 200ms ease-in-out;
+    &:link {
+        color: $drkgreen;
+    }
+    &:hover {
+        color: $lgtgrey;
+    }
+    &:active {
+        color: $drkgrey;
+    }
+    &:visited {
+        color: $drkgreen;
+    }
+}
+
+.callout {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    font-weight: $wgtBlack;
+    border: 3px solid $black;
+    border-radius: 1px;
+    transition: color 200ms ease-in-out,
+                border 200ms ease-in-out;
+    &:link {
+        color: $black;
+    }
+    &:active {
+        color: $black;
+    }
+    &:hover {
+        color: $drkgreen;
+        border: 3px solid $drkgreen;
+    }
+    &:visited {
+        color: $black;
+    }
+}
