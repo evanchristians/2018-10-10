@@ -1,0 +1,44 @@
+// Base Styles
+// ============
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    background-color: $white;
+
+    body {
+        text-align: center;
+        font-family: $font;
+        font-size: $fsBase;
+        color: $black;
+        font-weight: $wgtBase;
+
+        .headerblock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: color 300ms ease-in-out;
+            text-shadow: 2px 2px $grey,
+                         2px 3px $grey,
+                         3px 3px $grey,
+                         3px 4px $grey,
+                         4px 4px $grey,
+                         4px 5px $grey,
+                         5px 5px $grey,
+                         5px 6px $grey;
+
+            h1 {
+                font-weight: $wgtBase;
+                margin: 0;
+                font-size: $fsOne;
+            }
+            h2 {
+                font-weight: $wgtBase;
+                margin: 0;
+                font-size: $fsTwo;
+            }
+        }
+    }
+}

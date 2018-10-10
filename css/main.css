@@ -1,0 +1,29 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:300";
+* {
+  box-sizing: border-box; }
+
+:root {
+  background-color: #F5F5F5; }
+  :root body {
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 0.7rem;
+    color: #040404;
+    font-weight: 300; }
+    :root body .headerblock {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: color 300ms ease-in-out;
+      text-shadow: 2px 2px #CADBC0, 2px 3px #CADBC0, 3px 3px #CADBC0, 3px 4px #CADBC0, 4px 4px #CADBC0, 4px 5px #CADBC0, 5px 5px #CADBC0, 5px 6px #CADBC0; }
+      :root body .headerblock h1 {
+        font-weight: 300;
+        margin: 0;
+        font-size: 5em; }
+      :root body .headerblock h2 {
+        font-weight: 300;
+        margin: 0;
+        font-size: 4em; }
+
+/*# sourceMappingURL=main.css.map */
