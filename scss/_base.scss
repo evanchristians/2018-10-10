@@ -30,6 +30,7 @@
             background-attachment: fixed;
 
             div {
+                width: 90vw;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -61,16 +62,15 @@
             }
         }
         .primary-content {
-            width: 80%;
-            margin: 0 auto;
+            padding: 4em;
+            margin: 0;
             text-align: center;
             p {
                 text-align: justify;
             }
             .intro {
                 width: 70%;
-                margin: 4.5em auto;
-                margin-bottom: 2em;
+                margin: 3em auto;
                 font-size: 1.4em;
                 text-align: center;
                 color: $drkgreen;
@@ -83,8 +83,38 @@
         }
 
         .secondary-content {
-            width: 80%;
-            margin: 0 auto;
+            font-size: 1.4em;
+            color: $white;
+            font-weight: $wgtBase;
+            background-color: $drkgrey;
+            padding: 4em;
+            margin: 0;
+            img {
+                margin: 0 2em;
+                height: 12em;
+                width: 15em;
+                display: flex;
+                float: left;
+            }
+            h3 {
+                font-weight: $wgtBold;
+                font-size: $fsThree;
+            }
+        }
+        .main-footer {
+            border-top: 1px solid $drkgreen;
+            color: $lgtgrey;
+            font-weight: $wgtBold;
+            text-align: center;
+            background-color: $drkgrey;
+            padding: 3em 4em;
+            p {
+                margin: 0;
+                float: left;
+            }
+            .to-top {
+                float: right;
+            }
         }
     }
 }

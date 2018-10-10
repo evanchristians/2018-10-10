@@ -23,14 +23,14 @@ a {
     &:link {
         color: $drkgreen;
     }
+    &:visited {
+        color: $drkgreen;
+    }
     &:hover {
         color: $lgtgrey;
     }
     &:active {
         color: $drkgrey;
-    }
-    &:visited {
-        color: $drkgreen;
     }
 }
 
@@ -46,14 +46,14 @@ a {
     &:link {
         color: $black;
     }
-    &:active {
+    &:visited {
         color: $black;
     }
     &:hover {
         color: $drkgreen;
         border: 3px solid $drkgreen;
     }
-    &:visited {
+    &:active {
         color: $black;
     }
 }
