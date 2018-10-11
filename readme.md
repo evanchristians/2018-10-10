@@ -42,8 +42,9 @@ Technologies and Tools Used:
 - Created Grid Container
 - Added 3D Animation
 - Changed Layout for "secondary-content"
-- Tweaked Size and Length Values;
-- Tweaked Animation Time Values;
+- Tweaked Size and Length Values
+- Tweaked Animation Time Values
+- Added Media Queries
 
 
 ## Contributors
