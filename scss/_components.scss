@@ -7,7 +7,12 @@
 // Typography
 // ----------
 
+h1 {
+    line-height: 1.2em;
+}
+
 h2 {
+    line-height: 1.2em;
     font-weight: $wgtBold;
     font-size: $fsTwo;
     margin: 1.3em auto;
@@ -35,6 +40,7 @@ a {
 }
 
 .callout {
+    margin: 0 auto;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5em 1em;

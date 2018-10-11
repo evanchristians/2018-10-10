@@ -1,0 +1,85 @@
+:root {
+    body {
+        // ============
+        // Media Queries
+        // ============
+        
+        @media (max-width: 1240px) {
+                   
+                .secondary-content {
+                    height: fit-content;
+                    grid-gap: 1.5em;
+                    padding: 4em 2em;
+                    margin: 0 auto;
+                }
+            }
+        @media (max-width: 960px) {
+        
+            .secondary-content {
+                height: fit-content;
+                padding: 4em 10vw;
+                font-size: 1.05rem;
+                grid-template-columns: 1fr;
+
+                    span {
+                        .resorts {
+                            transform: rotateY(0turn);
+                            background-color: rgba(0, 0, 0, 0.8);
+                        }
+                        .tips {
+                            transform: rotateY(0turn);
+                            background-color: rgba(0, 0, 0, 0.8);
+                        }
+                    }
+            }
+        }
+        @media (max-width: 768px) {
+            .main-header {
+                div {
+                    img {
+                        margin-top: 1em;
+                        width: 3em;
+                        animation: bounce 850ms ease-in-out infinite;
+                    }
+                }
+            }
+            .primary-content {
+                height: fit-content;
+                padding: 4em 0.5em;
+                h2 {
+                    padding: 0 2em;
+                }
+            }
+            .secondary-content {
+                padding: 4em 4vw;
+                height: fit-content;
+                div {
+                    height: fit-content;
+                }
+            }
+        }
+
+        @media (max-width: 640px) {
+            .main-header {
+                font-size: .8rem;
+            }
+            .primary-content {
+                font-size: .8rem;
+            }
+            .secondary-content {
+                font-size: .8rem;
+            }
+            .main-footer {
+                text-align: center;
+                font-size: 0.7rem;
+                p {
+                    float: none;
+
+                }
+                .to-top {
+                    float: none;
+                }
+            }
+        }
+    }
+}

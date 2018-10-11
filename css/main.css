@@ -6,10 +6,6 @@
     transform: translateY(5px); }
   100% {
     transform: translateY(0px); } }
-@media (max-width: 768px) {
-  :root body .secondary-content {
-    font-size: 1.05rem;
-    grid-template-columns: 1fr; } }
 * {
   box-sizing: border-box; }
 
@@ -50,7 +46,7 @@
           font-size: 1.3em;
           margin: 1em auto; }
         :root body .main-header div img {
-          margin-top: 4em;
+          margin-top: 3em;
           width: 3em;
           animation: bounce 850ms ease-in-out infinite; }
     :root body .primary-content {
@@ -70,6 +66,8 @@
         margin: 6em auto;
         margin-bottom: 3em;
         font-size: 1.3em; }
+        :root body .primary-content .wildlife h2 {
+          padding: 0; }
     :root body .secondary-content {
       display: grid;
       grid-gap: 5em;
@@ -98,7 +96,7 @@
           border-radius: 0.1em;
           margin: 0 auto;
           height: 10em;
-          width: 60%;
+          width: 16em;
           display: flex;
           transform-style: preserve-3d; }
         :root body .secondary-content div h3 {
@@ -122,12 +120,14 @@
           margin-left: 2em;
           transform: translateZ(9em); }
       :root body .secondary-content span .resorts {
+        height: fit-content;
         background-image: url("../img/resort.jpg");
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
         background-blend-mode: multiply;
         transition: all 1100ms ease-in-out; }
       :root body .secondary-content span .tips {
+        height: fit-content;
         background-image: url("../img/mountain.jpg");
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
@@ -152,7 +152,11 @@
       :root body .main-footer .to-top {
         float: right; }
 
+h1 {
+  line-height: 1.2em; }
+
 h2 {
+  line-height: 1.2em;
   font-weight: 400;
   font-size: 2.2em;
   margin: 1.3em auto; }
@@ -170,6 +174,7 @@ a {
     color: #464646; }
 
 .callout {
+  margin: 0 auto;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5em 1em;
@@ -190,5 +195,53 @@ a {
 ul {
   padding: 0;
   list-style-type: circle; }
+
+@media (max-width: 1240px) {
+  :root body .secondary-content {
+    height: fit-content;
+    grid-gap: 1.5em;
+    padding: 4em 2em;
+    margin: 0 auto; } }
+@media (max-width: 960px) {
+  :root body .secondary-content {
+    height: fit-content;
+    padding: 4em 10vw;
+    font-size: 1.05rem;
+    grid-template-columns: 1fr; }
+    :root body .secondary-content span .resorts {
+      transform: rotateY(0turn);
+      background-color: rgba(0, 0, 0, 0.8); }
+    :root body .secondary-content span .tips {
+      transform: rotateY(0turn);
+      background-color: rgba(0, 0, 0, 0.8); } }
+@media (max-width: 768px) {
+  :root body .main-header div img {
+    margin-top: 1em;
+    width: 3em;
+    animation: bounce 850ms ease-in-out infinite; }
+  :root body .primary-content {
+    height: fit-content;
+    padding: 4em 0.5em; }
+    :root body .primary-content h2 {
+      padding: 0 2em; }
+  :root body .secondary-content {
+    padding: 4em 4vw;
+    height: fit-content; }
+    :root body .secondary-content div {
+      height: fit-content; } }
+@media (max-width: 640px) {
+  :root body .main-header {
+    font-size: .8rem; }
+  :root body .primary-content {
+    font-size: .8rem; }
+  :root body .secondary-content {
+    font-size: .8rem; }
+  :root body .main-footer {
+    text-align: center;
+    font-size: 0.7rem; }
+    :root body .main-footer p {
+      float: none; }
+    :root body .main-footer .to-top {
+      float: none; } }
 
 /*# sourceMappingURL=main.css.map */
