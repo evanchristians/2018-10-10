@@ -38,6 +38,13 @@ Technologies and Tools Used:
 - Added Component Partial
 - Added Styles for Content
 
+**2018-10-11**
+- Created Grid Container
+- Added 3D Animation
+- Changed Layout for "secondary-content"
+- Tweaked Size and Length Values;
+- Tweaked Animation Time Values;
+
 
 ## Contributors
 

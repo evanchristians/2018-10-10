@@ -48,7 +48,7 @@
         :root body .main-header div img {
           margin-top: 4em;
           width: 3em;
-          animation: bounce 750ms ease-in-out infinite; }
+          animation: bounce 850ms ease-in-out infinite; }
     :root body .primary-content {
       padding: 4em;
       margin: 0;
@@ -57,7 +57,8 @@
         text-align: justify; }
       :root body .primary-content .intro {
         width: 70%;
-        margin: 3em auto;
+        margin: 1.6em auto;
+        margin-bottom: 4em;
         font-size: 1.4em;
         text-align: center;
         color: #749C75; }
@@ -66,21 +67,74 @@
         margin-bottom: 3em;
         font-size: 1.3em; }
     :root body .secondary-content {
-      font-size: 1.4em;
+      display: grid;
+      grid-gap: 5em;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      font-size: 1.2rem;
       color: #FFFFFF;
       font-weight: 300;
       background-color: #464646;
-      padding: 4em;
+      height: 40em;
+      padding: 5em;
       margin: 0; }
-      :root body .secondary-content img {
-        margin: 0 2em;
-        height: 12em;
-        width: 15em;
-        display: flex;
-        float: left; }
-      :root body .secondary-content h3 {
-        font-weight: 400;
-        font-size: 1.3em; }
+      :root body .secondary-content div {
+        border: 1px solid #FFFFFF;
+        text-align: center;
+        float: left;
+        border-radius: 0.1em;
+        width: 100%;
+        height: 32em;
+        padding: 1em;
+        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.36);
+        transform-style: preserve-3d;
+        transform: rotateY(0.5turn); }
+        :root body .secondary-content div img {
+          transform: translateZ(5em);
+          border-radius: 0.1em;
+          margin: 0 auto;
+          height: 10em;
+          width: 60%;
+          display: flex;
+          transform-style: preserve-3d; }
+        :root body .secondary-content div h3 {
+          transform: translateZ(10em);
+          margin: 1.5em 0;
+          font-weight: 400;
+          font-size: 1.3em;
+          transform-style: preserve-3d; }
+        :root body .secondary-content div p {
+          padding: 0 1em;
+          transform-style: preserve-3d;
+          transform: translateZ(8em); }
+        :root body .secondary-content div ul {
+          text-align: left;
+          transform-style: preserve-3d;
+          margin-left: 3em;
+          transform: translateZ(9em); }
+        :root body .secondary-content div ol {
+          text-align: left;
+          transform-style: preserve-3d;
+          margin-left: 2em;
+          transform: translateZ(9em); }
+      :root body .secondary-content span .resorts {
+        background-image: url("../img/resort.jpg");
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
+        transition: all 1100ms ease-in-out; }
+      :root body .secondary-content span .tips {
+        background-image: url("../img/mountain.jpg");
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
+        transition: all 1100ms ease-in-out; }
+      :root body .secondary-content span:hover .resorts {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: rotateY(0turn); }
+      :root body .secondary-content span:hover .tips {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: rotateY(0turn); }
     :root body .main-footer {
       border-top: 1px solid #749C75;
       color: #CADBC0;
@@ -128,5 +182,9 @@ a {
     border: 3px solid #749C75; }
   .callout:active {
     color: #040404; }
+
+ul {
+  padding: 0;
+  list-style-type: circle; }
 
 /*# sourceMappingURL=main.css.map */
