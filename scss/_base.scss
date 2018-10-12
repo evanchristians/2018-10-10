@@ -89,6 +89,17 @@
                     padding: 0;
                 }
             }
+            // .callbox {
+            //     height: 40vh;
+            //     width: 100%;
+            //     background-color: $drkgrey;
+            //     background-blend-mode: lighten;
+            //     background-image: url('../img/hedr-bgimg.jpg');
+            //     background-position: center;
+            //     background-size: cover;
+            //     background-repeat: no-repeat;
+            //     background-attachment: fixed;
+            // }
         }
 
         .secondary-content {
@@ -121,13 +132,16 @@
                 transform-style: preserve-3d;
                 transform: rotateY(0.5turn);
                 img {
-                    transform: translateZ(5em);
                     border-radius: 0.1em;
                     margin: 1.6em auto;
                     height: 10em;;
                     width: 16em;
                     display: flex;
+                    opacity: 0;
+                    transform: translateY(1em)  translateZ(1em);
                     transform-style: preserve-3d;
+                    transition: opacity 800ms ease-in-out 500ms,
+                    transform 900ms ease-in-out 400ms;
                 }
                 h3 {
                     transform: translateZ(10em);
@@ -164,18 +178,18 @@
                 .resorts {
                     background-image: url('../img/resort.jpg');
                     background-size: cover;
+                    background-position: center;
                     background-color: rgba(0, 0, 0, 0);
                     background-blend-mode: multiply;
-                    transition: all 1100ms ease-in-out;
+                    transition: all 900ms ease-in-out;
                     
                 }
                 .tips {
-
                     background-image: url('../img/mountain.jpg');
                     background-size: cover;
                     background-color: rgba(0, 0, 0, 0);
                     background-blend-mode: multiply;
-                    transition: all 1100ms ease-in-out;
+                    transition: all 900ms ease-in-out;
                 }
                 &:hover .resorts {
                     background-color: rgba(0, 0, 0, 0.8);
@@ -185,6 +199,10 @@
                     background-color: rgba(0, 0, 0, 0.8);
                     transform: rotateY(0turn);
                 }
+                &:hover img {
+                    opacity: 1;
+                    transform: translateY(0em) translateZ(7em);
+                } 
             }
 
         }

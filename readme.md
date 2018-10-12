@@ -46,6 +46,11 @@ Technologies and Tools Used:
 - Tweaked Animation Time Values
 - Added Media Queries
 
+**2018-10-12**
+- Changed Card Images
+- Rescaled Fonts
+- Tweaked Animations
+- Changed Button Hover Style
 
 ## Contributors
 

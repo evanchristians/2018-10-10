@@ -51,8 +51,8 @@ a {
     font-weight: $wgtBlack;
     border: 3px solid $black;
     border-radius: 1px;
-    transition: color 200ms ease-in-out,
-                border 200ms ease-in-out;
+    transition: color 300ms ease-in-out,
+                background-color 300ms ease-in-out;
     &:link {
         color: $black;
     }
@@ -60,8 +60,8 @@ a {
         color: $black;
     }
     &:hover {
-        color: $drkgreen;
-        border: 3px solid $drkgreen;
+        background-color: $black;
+        color: $white;
     }
     &:active {
         color: $black;

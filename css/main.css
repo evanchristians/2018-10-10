@@ -104,13 +104,15 @@
         transform-style: preserve-3d;
         transform: rotateY(0.5turn); }
         :root body .secondary-content div img {
-          transform: translateZ(5em);
           border-radius: 0.1em;
           margin: 1.6em auto;
           height: 10em;
           width: 16em;
           display: flex;
-          transform-style: preserve-3d; }
+          opacity: 0;
+          transform: translateY(1em) translateZ(1em);
+          transform-style: preserve-3d;
+          transition: opacity 800ms ease-in-out 500ms, transform 900ms ease-in-out 400ms; }
         :root body .secondary-content div h3 {
           transform: translateZ(10em);
           margin: 1.5em 0;
@@ -134,21 +136,25 @@
       :root body .secondary-content span .resorts {
         background-image: url("../img/resort.jpg");
         background-size: cover;
+        background-position: center;
         background-color: rgba(0, 0, 0, 0);
         background-blend-mode: multiply;
-        transition: all 1100ms ease-in-out; }
+        transition: all 900ms ease-in-out; }
       :root body .secondary-content span .tips {
         background-image: url("../img/mountain.jpg");
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
         background-blend-mode: multiply;
-        transition: all 1100ms ease-in-out; }
+        transition: all 900ms ease-in-out; }
       :root body .secondary-content span:hover .resorts {
         background-color: rgba(0, 0, 0, 0.8);
         transform: rotateY(0turn); }
       :root body .secondary-content span:hover .tips {
         background-color: rgba(0, 0, 0, 0.8);
         transform: rotateY(0turn); }
+      :root body .secondary-content span:hover img {
+        opacity: 1;
+        transform: translateY(0em) translateZ(7em); }
     :root body .main-footer {
       border-top: 1px solid #749C75;
       color: #CADBC0;
@@ -195,14 +201,14 @@ a {
   font-weight: 600;
   border: 3px solid #040404;
   border-radius: 1px;
-  transition: color 200ms ease-in-out, border 200ms ease-in-out; }
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out; }
   .callout:link {
     color: #040404; }
   .callout:visited {
     color: #040404; }
   .callout:hover {
-    color: #749C75;
-    border: 3px solid #749C75; }
+    background-color: #040404;
+    color: #FFFFFF; }
   .callout:active {
     color: #040404; }
 
@@ -228,7 +234,10 @@ ul {
       background-color: rgba(0, 0, 0, 0.8); }
     :root body .secondary-content span .tips {
       transform: rotateY(0turn);
-      background-color: rgba(0, 0, 0, 0.8); } }
+      background-color: rgba(0, 0, 0, 0.8); }
+    :root body .secondary-content span img {
+      opacity: 1;
+      transform: translateY(0em) translateZ(7em); } }
 @media (max-width: 768px) {
   :root body .main-header div img {
     margin-top: 1em;
