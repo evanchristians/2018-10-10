@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Raleway:300,400,600";
+@import "https://fonts.googleapis.com/css?family=Raleway:400,500,600";
 @keyframes bounce {
   0% {
     transform: translateY(0px); }
@@ -17,19 +17,23 @@
     font-family: "Raleway";
     font-size: 0.9rem;
     color: #040404;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2em; }
     :root body .main-header {
+      font-size: 1.02rem;
       position: relative;
-      height: 20em;
+      min-height: 20em;
+      height: 60vh;
       text-align: center;
       transition: color 300ms ease-in-out;
-      background-image: url("../img/header-background.jpg");
-      background-color: #FFFFFF04;
+      background-color: #464646;
       background-blend-mode: lighten;
+      background-image: url("../img/hedr-bgimg.jpg");
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      background-attachment: fixed; }
+      background-attachment: fixed;
+      color: #FFFFFF; }
       :root body .main-header div {
         width: 90vw;
         position: absolute;
@@ -37,12 +41,12 @@
         left: 50%;
         transform: translate(-50%, -50%); }
         :root body .main-header div h1 {
-          font-weight: 400;
+          font-weight: 500;
           margin: 0;
           font-size: 3.1em; }
         :root body .main-header div .main-title {
           display: block;
-          font-weight: 300;
+          font-weight: 400;
           font-size: 1.3em;
           margin: 1em auto; }
         :root body .main-header div img {
@@ -50,19 +54,20 @@
           width: 3em;
           animation: bounce 850ms ease-in-out infinite; }
     :root body .primary-content {
-      padding: 4em;
+      padding: 3em 4em;
       margin: 0;
       text-align: center; }
       :root body .primary-content p {
         text-align: justify; }
       :root body .primary-content .intro {
-        width: 70%;
+        width: 60%;
         margin: 1.6em auto;
         margin-bottom: 3em;
-        font-size: 1.4em;
+        font-size: 1.5em;
         text-align: center;
         color: #749C75; }
       :root body .primary-content .wildlife {
+        width: 95%;
         margin: 4em auto;
         margin-bottom: 3em;
         font-size: 1.3em; }
@@ -74,10 +79,16 @@
       grid-gap: 5em;
       grid-template-columns: 1fr 1fr;
       position: relative;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: #FFFFFF;
-      font-weight: 300;
+      font-weight: 400;
       background-color: #464646;
+      background-blend-mode: lighten;
+      background-image: url("../img/hedr-bgimg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       height: 40em;
       padding: 5em 8em;
       margin: 0 auto; }
@@ -89,13 +100,13 @@
         width: 100%;
         height: 32em;
         padding: 1em;
-        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.36);
+        box-shadow: 0 2px 50px 3px rgba(0, 0, 0, 0.36);
         transform-style: preserve-3d;
         transform: rotateY(0.5turn); }
         :root body .secondary-content div img {
           transform: translateZ(5em);
           border-radius: 0.1em;
-          margin: 0 auto;
+          margin: 1.6em auto;
           height: 10em;
           width: 16em;
           display: flex;
@@ -103,7 +114,7 @@
         :root body .secondary-content div h3 {
           transform: translateZ(10em);
           margin: 1.5em 0;
-          font-weight: 400;
+          font-weight: 500;
           font-size: 1.3em;
           transform-style: preserve-3d; }
         :root body .secondary-content div p {
@@ -141,7 +152,7 @@
     :root body .main-footer {
       border-top: 1px solid #749C75;
       color: #CADBC0;
-      font-weight: 400;
+      font-weight: 500;
       text-align: center;
       background-color: #464646;
       padding: 3em 4em; }
@@ -156,7 +167,7 @@ h1 {
 
 h2 {
   line-height: 1.2em;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2.2em;
   margin: 1.3em auto; }
 
@@ -173,10 +184,14 @@ a {
     color: #464646; }
 
 .callout {
+  width: fit-content;
+  display: block;
+  font-size: 1.05em;
   margin: 0 auto;
+  margin-bottom: 6em;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 0.6em 1em;
   font-weight: 600;
   border: 3px solid #040404;
   border-radius: 1px;

@@ -40,10 +40,14 @@ a {
 }
 
 .callout {
+    width: fit-content;
+    display: block;
+    font-size: 1.05em;
     margin: 0 auto;
+    margin-bottom: 6em;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5em 1em;
+    padding: 0.6em 1em;
     font-weight: $wgtBlack;
     border: 3px solid $black;
     border-radius: 1px;
