@@ -7,9 +7,10 @@
         @media (max-width: 1240px) {
                    
                 .secondary-content {
+                    width: 100%;
                     height: fit-content;
-                    grid-gap: 1.5em;
-                    padding: 4em 2em;
+                    grid-gap: 4em;
+                    padding: 4em 5vw;
                     margin: 0 auto;
                 }
             }
@@ -45,7 +46,10 @@
             }
             .primary-content {
                 height: fit-content;
-                padding: 4em 0.5em;
+                padding: 4em 0.8em;
+                .intro {
+                    width: 85%;
+                }
                 h2 {
                     padding: 0 2em;
                 }

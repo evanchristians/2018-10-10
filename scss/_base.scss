@@ -71,16 +71,17 @@
             .intro {
                 width: 70%;
                 margin: 1.6em auto;
-                margin-bottom: 4em;
+                margin-bottom: 3em;
                 font-size: 1.4em;
                 text-align: center;
                 color: $drkgreen;
             }
             .wildlife {
-                margin: 6em auto;
+                margin: 4em auto;
                 margin-bottom: 3em;
                 font-size: 1.3em;
                 h2 {
+                    font-size: $fsTwo;
                     padding: 0;
                 }
             }
@@ -91,12 +92,12 @@
             grid-gap: 5em;
             grid-template-columns: 1fr 1fr;
             position: relative;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: $white;
             font-weight: $wgtBase;
             background-color: $drkgrey;
             height: 40em;
-            padding: 5em;
+            padding: 5em 8em;
             margin: 0 auto;
             div {
                 border: 1px solid $white;
@@ -151,7 +152,6 @@
 
             span {
                 .resorts {
-                    height: fit-content;
                     background-image: url('../img/resort.jpg');
                     background-size: cover;
                     background-color: rgba(0, 0, 0, 0);
@@ -160,7 +160,7 @@
                     
                 }
                 .tips {
-                    height: fit-content;
+
                     background-image: url('../img/mountain.jpg');
                     background-size: cover;
                     background-color: rgba(0, 0, 0, 0);

@@ -15,7 +15,7 @@
   :root body {
     margin: 0;
     font-family: "Raleway";
-    font-size: 0.94rem;
+    font-size: 0.9rem;
     color: #040404;
     font-weight: 300;
     line-height: 2em; }
@@ -58,27 +58,28 @@
       :root body .primary-content .intro {
         width: 70%;
         margin: 1.6em auto;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
         font-size: 1.4em;
         text-align: center;
         color: #749C75; }
       :root body .primary-content .wildlife {
-        margin: 6em auto;
+        margin: 4em auto;
         margin-bottom: 3em;
         font-size: 1.3em; }
         :root body .primary-content .wildlife h2 {
+          font-size: 2.2em;
           padding: 0; }
     :root body .secondary-content {
       display: grid;
       grid-gap: 5em;
       grid-template-columns: 1fr 1fr;
       position: relative;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #FFFFFF;
       font-weight: 300;
       background-color: #464646;
       height: 40em;
-      padding: 5em;
+      padding: 5em 8em;
       margin: 0 auto; }
       :root body .secondary-content div {
         border: 1px solid #FFFFFF;
@@ -120,14 +121,12 @@
           margin-left: 2em;
           transform: translateZ(9em); }
       :root body .secondary-content span .resorts {
-        height: fit-content;
         background-image: url("../img/resort.jpg");
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
         background-blend-mode: multiply;
         transition: all 1100ms ease-in-out; }
       :root body .secondary-content span .tips {
-        height: fit-content;
         background-image: url("../img/mountain.jpg");
         background-size: cover;
         background-color: rgba(0, 0, 0, 0);
@@ -198,9 +197,10 @@ ul {
 
 @media (max-width: 1240px) {
   :root body .secondary-content {
+    width: 100%;
     height: fit-content;
-    grid-gap: 1.5em;
-    padding: 4em 2em;
+    grid-gap: 4em;
+    padding: 4em 5vw;
     margin: 0 auto; } }
 @media (max-width: 960px) {
   :root body .secondary-content {
@@ -221,7 +221,9 @@ ul {
     animation: bounce 850ms ease-in-out infinite; }
   :root body .primary-content {
     height: fit-content;
-    padding: 4em 0.5em; }
+    padding: 4em 0.8em; }
+    :root body .primary-content .intro {
+      width: 85%; }
     :root body .primary-content h2 {
       padding: 0 2em; }
   :root body .secondary-content {
